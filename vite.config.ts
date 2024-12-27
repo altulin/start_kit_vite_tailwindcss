@@ -1,4 +1,3 @@
-
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import svgr from "vite-plugin-svgr";
@@ -6,6 +5,7 @@ import autoprefixer from "autoprefixer";
 import { robots } from "vite-plugin-robots";
 // import createSvgSpritePlugin from "vite-plugin-svg-sprite";
 import tailwindcss from "tailwindcss";
+import path from "path";
 
 export default defineConfig({
   plugins: [
@@ -24,11 +24,11 @@ export default defineConfig({
         tailwindcss(),
       ],
     },
-    
   },
   resolve: {
     alias: {
-      "@": "/src",
+      // "@": "/src",
+      "@": path.resolve(__dirname, "./src"),
     },
   },
   base: "./",

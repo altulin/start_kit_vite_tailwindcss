@@ -1,13 +1,11 @@
+import { MainProviders } from "@/app/providers";
 
-
-
-const App =()=> {
-
+const App = () => {
   return (
-    <>
-      <h1>321</h1>
-    </>
-  )
-}
+    <MainProviders>
+      <h1 className="text-9xl">321</h1>
+    </MainProviders>
+  );
+};
 
-export default App
+export default App;
