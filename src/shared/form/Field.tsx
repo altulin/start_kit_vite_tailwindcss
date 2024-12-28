@@ -6,9 +6,9 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/shared/ui/form";
+} from "@/shared/form/ui/form";
 import { ITextInput } from "@/shared/form/utils/types";
-import { Input } from "@/shared/ui/input";
+import { Input } from "@/shared/form/ui/input";
 import { isComponent } from "@/entities/lib/checkComponent";
 
 export const Label: FC<ITextInput> = ({ label_text }) => {

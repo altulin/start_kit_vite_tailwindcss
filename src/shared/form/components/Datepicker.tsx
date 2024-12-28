@@ -2,11 +2,15 @@ import { FC } from "react";
 import { useController } from "react-hook-form";
 import { ITextInput } from "../utils/types";
 import { Label } from "../Field";
-import { Popover, PopoverContent, PopoverTrigger } from "@/shared/ui/popover";
-import { FormControl } from "@/shared/ui/form";
-import { Button } from "@/shared/ui/button";
+import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+} from "@/shared/form/ui/popover";
+import { FormControl } from "@/shared/form/ui/form";
+import { Button } from "@/shared/form/ui/button";
 import { cn } from "@/shared/lib/utils";
-import { Calendar } from "@/shared/ui/calendar";
+import { Calendar } from "@/shared/form/ui/calendar";
 import { CalendarIcon } from "lucide-react";
 import { format } from "date-fns";
 import { ru } from "date-fns/locale/ru";
@@ -29,6 +33,7 @@ const MyDatePicker: FC<ITextInput> = ({ ...props }) => {
               className={cn(
                 "w-full pl-3 text-left font-normal",
                 !field.value && "text-muted-foreground",
+                // "hover:bg-transparent",
               )}
             >
               {field.value ? (

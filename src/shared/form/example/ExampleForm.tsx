@@ -2,7 +2,7 @@ import { FC, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 
-import { Form } from "@/shared/ui/form";
+import { Form } from "@/shared/form/ui/form";
 import { validateSchema } from "@/shared/form/utils/validation/yupSchemaCreator";
 import { formData } from "./data";
 import { makeInitialValues } from "@/shared/form/utils/initialValues";

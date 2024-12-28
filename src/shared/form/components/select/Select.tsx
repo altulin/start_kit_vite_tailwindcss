@@ -6,8 +6,8 @@ import {
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from "@/shared/ui/select";
-import { FormControl } from "@/shared/ui/form";
+} from "@/shared/form/ui/select";
+import { FormControl } from "@/shared/form/ui/form";
 import { FC } from "react";
 import { Label } from "../../Field";
 

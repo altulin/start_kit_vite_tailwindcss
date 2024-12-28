@@ -1,8 +1,8 @@
 import { FC } from "react";
 import { ITextInput } from "../utils/types";
-import { Checkbox } from "@/shared/ui/checkbox";
+import { Checkbox } from "@/shared/form/ui/checkbox";
 import { useController } from "react-hook-form";
-import { FormControl } from "@/shared/ui/form";
+import { FormControl } from "@/shared/form/ui/form";
 import { Label } from "../Field";
 
 const CheckboxField: FC<ITextInput> = ({ children, ...props }) => {

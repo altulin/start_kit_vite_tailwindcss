@@ -1,8 +1,8 @@
 import { FC } from "react";
 import { ITextInput } from "../utils/types";
 import { useController } from "react-hook-form";
-import { FormControl, FormItem, FormLabel } from "@/shared/ui/form";
-import { RadioGroup, RadioGroupItem } from "@/shared/ui/radio-group";
+import { FormControl, FormItem, FormLabel } from "@/shared/form/ui/form";
+import { RadioGroup, RadioGroupItem } from "@/shared/form/ui/radio-group";
 import { Label } from "../Field";
 
 const RadioComponent: FC<ITextInput> = ({ radio_list, ...props }) => {

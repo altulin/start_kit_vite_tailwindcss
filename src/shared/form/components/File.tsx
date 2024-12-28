@@ -3,7 +3,7 @@ import { ChangeEvent, FC } from "react";
 import { checkArr } from "@/entities/lib/checkArr";
 import { useController } from "react-hook-form";
 import { ITextInput } from "../utils/types";
-import { FormControl, FormLabel } from "@/shared/ui/form";
+import { FormControl, FormLabel } from "@/shared/form/ui/form";
 
 const File: FC<ITextInput> = ({ ...props }) => {
   const { ...input_props } = props;

@@ -1,9 +1,9 @@
-import { Input } from "@/shared/ui/input";
+import { Input } from "@/shared/form/ui/input";
 import { FC, useState } from "react";
 import { ITextInput } from "../../utils/types";
 import ButtonEye from "./ButtonEye";
 import { useController } from "react-hook-form";
-import { FormControl } from "@/shared/ui/form";
+import { FormControl } from "@/shared/form/ui/form";
 import { Label } from "../../Field";
 
 const PasswordField: FC<ITextInput> = ({ ...props }) => {
