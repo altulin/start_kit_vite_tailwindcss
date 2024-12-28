@@ -3,7 +3,7 @@ import react from "@vitejs/plugin-react";
 import svgr from "vite-plugin-svgr";
 import autoprefixer from "autoprefixer";
 import { robots } from "vite-plugin-robots";
-// import createSvgSpritePlugin from "vite-plugin-svg-sprite";
+import createSvgSpritePlugin from "vite-plugin-svg-sprite";
 import tailwindcss from "tailwindcss";
 import path from "path";
 
@@ -12,10 +12,10 @@ export default defineConfig({
     react(),
     svgr(),
     robots({}),
-    // createSvgSpritePlugin({
-    //   symbolId: "icon-[name]-[hash]",
-    //   include: ["**/sprite/**.svg"],
-    // }),
+    createSvgSpritePlugin({
+      symbolId: "icon-[name]-[hash]",
+      include: ["**/sprite/**.svg"],
+    }),
   ],
   css: {
     postcss: {

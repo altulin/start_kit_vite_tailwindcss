@@ -11,22 +11,7 @@ export default {
       },
       colors: {},
       screens: {
-        ph: {
-          min: "640px",
-        },
-        tb: {
-          min: "768px",
-        },
-        emt: {
-          min: "1024px",
-        },
-        dt: {
-          min: "1280px",
-        },
-        ldt: {
-          min: "1536px",
-        },
-        max_dt: {
+        "3xl": {
           min: "1920px",
         },
       },
@@ -34,3 +19,10 @@ export default {
   },
   plugins: [require("tailwindcss-animate")],
 };
+
+// 'sm': '640px',
+// 'md': '768px',
+// 'lg': '1024px',
+// 'xl': '1280px',
+// '2xl': '1536px',
+// '3xl': '1920px',

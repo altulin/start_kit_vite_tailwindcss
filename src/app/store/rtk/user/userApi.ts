@@ -6,7 +6,7 @@ export const user = api.injectEndpoints({
       query: () => ({
         url: "/posts/",
       }),
-      transformResponse: (response: { id: number; title: string }[]) => {
+      transformResponse: (response: { id: string; title: string }[]) => {
         return response.map((user) => {
           return { label: user.title.replace(/ .*/, ""), value: user.id };
         });

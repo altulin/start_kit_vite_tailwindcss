@@ -1,9 +1,10 @@
 import { MainProviders } from "@/app/providers";
+import AppRouter from "./routers/AppRouter";
 
 const App = () => {
   return (
     <MainProviders>
-      <h1 className="text-9xl">321</h1>
+      <AppRouter />
     </MainProviders>
   );
 };
