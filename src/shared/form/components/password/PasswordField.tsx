@@ -17,9 +17,9 @@ const PasswordField: FC<ITextInput> = ({ ...props }) => {
       <div className="relative">
         <FormControl>
           <Input
-            onChange={field.onChange}
-            {...props}
             type={isTypeText ? "text" : "password"}
+            {...props}
+            {...field}
           />
         </FormControl>
 

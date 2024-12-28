@@ -7,6 +7,7 @@ import { validateSchema } from "@/shared/form/utils/validation/yupSchemaCreator"
 import { formData } from "./data";
 import { makeInitialValues } from "@/shared/form/utils/initialValues";
 import Field from "../Field";
+import { Button } from "../ui/button";
 
 const ExampleForm: FC = () => {
   const form = useForm({
@@ -22,6 +23,7 @@ const ExampleForm: FC = () => {
 
   const onSubmit = (data: Record<string, unknown>) => {
     console.log(data);
+    // form.reset(undefined, { keepDirtyValues: true });
     // но можно и здесь
     // reset();
   };
@@ -39,6 +41,8 @@ const ExampleForm: FC = () => {
         {formData.map((item, i) => (
           <Field key={i} {...item} />
         ))}
+
+        <Button type="submit">Submit</Button>
       </form>
     </Form>
   );
