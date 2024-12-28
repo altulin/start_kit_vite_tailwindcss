@@ -10,7 +10,6 @@ import PasswordField from "../../components/password/PasswordField";
 
 export const fieldPassword = (args: ITextInput) => {
   return {
-    type: "password",
     autoComplete: "off",
     validation_type: "string",
     validations: [
@@ -34,7 +33,6 @@ export const fieldPassword = (args: ITextInput) => {
 
 export const fieldConfirmPassword = (args: ITextInput) => {
   return {
-    type: "password",
     autoComplete: "off",
     validation_type: "string",
     validations: [

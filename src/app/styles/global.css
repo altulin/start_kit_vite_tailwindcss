@@ -8,6 +8,13 @@ body {
   flex-direction: column;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  background-clip: text;
+}
+
 #root {
   flex-grow: 1;
   display: flex;
